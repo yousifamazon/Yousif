@@ -1,70 +1,97 @@
+/* ڕێسای گشتی */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f9f9f9;
-    color: #333;
+    text-align: right;
 }
 
 header {
     background-color: #4CAF50;
     color: white;
-    padding: 1rem;
+    padding: 20px;
     text-align: center;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
+nav {
+    background-color: #333;
+    overflow: hidden;
 }
 
 nav a {
     color: white;
+    padding: 14px 16px;
     text-decoration: none;
+    display: inline-block;
 }
 
-.products, .cart {
-    padding: 2rem;
+nav a:hover {
+    background-color: #ddd;
+    color: black;
 }
 
-.product-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 1rem;
+/* بەشی بەرھەمەکان */
+.product-section {
+    padding: 20px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-.product-card {
-    background: white;
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.product {
     border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 1rem;
-    text-align: center;
+    padding: 10px;
+    width: 200px;
+    border-radius: 5px;
 }
 
-.product-card img {
-    max-width: 100%;
-    height: auto;
+.product img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* کارت */
+.cart-section {
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* فۆڕمەکان */
+.form-section {
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+input, textarea, button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
 }
 
 button {
     background-color: #4CAF50;
     color: white;
     border: none;
-    padding: 0.5rem 1rem;
     cursor: pointer;
-    border-radius: 4px;
 }
 
 button:hover {
     background-color: #45a049;
-}
-
-footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: #333;
-    color: white;
 }
