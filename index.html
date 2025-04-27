@@ -1,44 +1,94 @@
 <!DOCTYPE html>
-<html lang="ku" dir="rtl">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ئۆنلاین ستۆر</title>
+    <title>Yousif Store - فرۆشگای ئەلیکترۆنی</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- ناوەڕۆکی ماڵپەڕ -->
     <header>
-        <h1>ئۆنلاین ستۆر</h1>
-        <nav>
-            <ul>
-                <li><a href="#">سەرەکی</a></li>
-                <li><a href="#products">بەرهەمەکان</a></li>
-                <li><a href="#cart">سەبەسکە (<span id="cart-count">0</span>)</a></li>
-            </ul>
-        </nav>
+        <h1>Yousif Store</h1>
+        <p>ژمارەی پەیوەندی: <a href="tel:+9647509949094">٩٦٤٧٥٠٩٩٤٩٠٩٤</a></p>
     </header>
 
-    <main>
-        <section id="products" class="products">
-            <h2>بەرهەمەکان</h2>
-            <div class="product-list">
-                <!-- بەرهەمەکان لێرە دەخرێنەوە -->
-            </div>
-        </section>
+    <!-- بەرزکردنەوەی پێڕست -->
+    <nav>
+        <a href="#home">سەرەکی</a>
+        <a href="#electronics">ئەلیکترۆنی</a>
+        <a href="#home-items">کەلوپەلی ناو ماڵ</a>
+        <a href="#cosmetics">جوانکاری</a>
+        <a href="#cart">کارت (<span id="cart-count">0</span>)</a>
+        <a href="#register">خۆتۆمارکردن</a>
+    </nav>
 
-        <section id="cart" class="cart">
-            <h2>سەبەسکە</h2>
-            <div class="cart-items">
-                <!-- کاڵاکانی سەبەسکە لێرە دەخرێنەوە -->
-            </div>
-            <button id="checkout-btn">تێچوو</button>
-        </section>
-    </main>
+    <!-- بەشی سەرەکی -->
+    <section id="home" class="main-section">
+        <h2>بەخێربێی بۆ Yousif Store!</h2>
+        <p>باشترین کەلوپەلی ئەلیکترۆنی و ناو ماڵ</p>
+    </section>
 
+    <!-- بەشی ئەلیکترۆنی (٥٠ بەرھەم) -->
+    <section id="electronics" class="product-section">
+        <h2>ئەلیکترۆنی</h2>
+        <div class="products" id="electronics-products">
+            <!-- بەرھەمەکان لە JS زیاد دەکرێن -->
+        </div>
+    </section>
+
+    <!-- کەلوپەلی ناو ماڵ (٥٠ بەرھەم) -->
+    <section id="home-items" class="product-section">
+        <h2>کەلوپەلی ناو ماڵ</h2>
+        <div class="products" id="home-products">
+            <!-- بەرھەمەکان لە JS زیاد دەکرێن -->
+        </div>
+    </section>
+
+    <!-- جوانکاری (٥٠ بەرھەم) -->
+    <section id="cosmetics" class="product-section">
+        <h2>جوانکاری کۆسماتیک</h2>
+        <div class="products" id="cosmetics-products">
+            <!-- بەرھەمەکان لە JS زیاد دەکرێن -->
+        </div>
+    </section>
+
+    <!-- کارت -->
+    <section id="cart" class="cart-section">
+        <h2>کارتی فرۆشتن</h2>
+        <div id="cart-items"></div>
+        <p>کۆی گشتی: <span id="total-price">٠</span>$</p>
+        <button id="checkout-btn">پارەدان</button>
+    </section>
+
+    <!-- خۆتۆمارکردن -->
+    <section id="register" class="form-section">
+        <h2>خۆتۆمارکردن</h2>
+        <form id="register-form">
+            <input type="text" placeholder="ناو" required>
+            <input type="email" placeholder="ئیمەیڵ" required>
+            <input type="password" placeholder="وشەی نهێنی" required>
+            <button type="submit">تۆمارکردن</button>
+        </form>
+    </section>
+
+    <!-- پەیوەندی -->
+    <section id="contact" class="form-section">
+        <h2>پەیوەندی</h2>
+        <form id="contact-form">
+            <input type="text" placeholder="ناو" required>
+            <input type="email" placeholder="ئیمەیڵ" required>
+            <textarea placeholder="پەیام" required></textarea>
+            <button type="submit">ناردن</button>
+        </form>
+    </section>
+
+    <!-- پێنجەر -->
     <footer>
-        <p>&copy; 2024 ئۆنلاین ستۆر. هەموو مافەکان پارێزراوە.</p>
+        <p>&copy; ٢٠٢٣ Yousif Store. هەموو مافەکان پارێزراون.</p>
     </footer>
 
+    <!-- Javascript -->
     <script src="script.js"></script>
 </body>
 </html>
